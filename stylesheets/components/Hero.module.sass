@@ -1,0 +1,37 @@
+@import "../../utils/widthPicker"
+@import "../../utils/colorPalette"
+
+.introHeadingStyle
+  font-weight: 700
+  font-size: 75px
+  line-height: 50px
+  margin-top: 60px
+  margin-bottom: 60px
+  text-transform: uppercase
+  +screen(lessThanMedium)
+    font-size: 50px
+    margin-bottom: 20px
+    line-height: 52px
+    font-weight: 100
+
+.introSubHeadingStyle
+  font-size: 40px
+  line-height: 50px
+  margin-top: 60px
+  margin-bottom: 60px
+  max-width: 900px
+  margin-left: auto
+  margin-right: auto
+  +screen(lessThanMedium)
+    font-size: 22px
+    line-height: 26px
+    margin-bottom: 30px
+
+.introFont
+  font-family: 'Montserrat', sans-serif
+  font-weight: 600
+
+.introMargin
+  +screen(lessThanMedium)
+    padding-top: 100px
+    padding-bottom: 150px

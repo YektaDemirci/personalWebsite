@@ -1,0 +1,92 @@
+.fade-in {
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 2s ease-in-out;
+}
+  
+.visible {
+    opacity: 1;
+    visibility: visible;
+}
+
+.justVisible {
+    opacity: 1;
+    visibility: visible;
+}
+
+.ac_btn {
+    display: inline-block;
+    color: #fafafa;
+    border: #fafafa 3px solid;
+    border-radius: 0;
+    /* overflow: hidden; */
+    cursor: pointer;
+    position: relative;
+    margin-top: 60px;
+    padding: 10px;
+    width: 140px;
+    height: 2.6em;
+    transition: opacity 4s ease-in-out;
+}
+
+.ac_btn .ring {
+    display: inline-block;
+    font-size: 20px;
+    padding: 10px;
+    width: 140px;
+    height: 2.6em;
+    font-weight: 700;
+    line-height: 1.4em;
+    color: #fafafa;
+    text-decoration: none;
+    backdrop-filter: blur(5px);
+    cursor: pointer;
+
+    top: 0;
+    left: 0;
+    position: relative;
+    transform: translate3d(0px, 0px, 0px);
+}
+
+/* .ac_btn:hover {
+    box-shadow: 8px 8px 0px var(--text-color), -8px -8px 0px var(--text-color);
+} */
+
+.ac_btn .btn_resume {
+    border: 3px solid #fafafa;
+    position: absolute;
+    z-index: 3;
+}
+
+.ac_btn .one {
+    z-index: 2;
+    position: absolute;
+    visibility: hidden;
+    transition: all 0.5s cubic-bezier(0.55, 0, 0.1, 1);
+}
+
+.ac_btn .two {
+    z-index: 1;
+    position: absolute;
+    visibility: hidden;
+    transition: all 0.5s cubic-bezier(0.55, 0, 0.1, 1);
+}
+
+/* .ac_btn:hover .btn_resume {
+} */
+
+.ac_btn:hover .one {
+    visibility: visible;
+    transform: translate3d(20px, 20px, 0px);
+    border: 3px solid #fafafa;
+}
+
+.ac_btn:hover .two {
+    visibility: visible;
+    transform: translate3d(-20px, -20px, 0px);
+    border: 3px solid #fafafa;
+}
+
+.ac_btn:hover .three {
+    transform: translate3d(0px, 0px, 0px);
+}
