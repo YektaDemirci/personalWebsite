@@ -1,24 +1,28 @@
 {
   "skillList": [
     {
-      "imageLink": "/images/personalSkills/design.svg",
+      "pid": "system",
+      "imageLink": "/images/personalSkills/systemDesign.svg",
       "imageAlt": "design icon",
-      "text": "Design is as equally important as the engineering behind the product. When I work on design, I constantly ask myself about how the user is going to interact with it. I prefer prototyping with a pen and paper because it allows you to draw everything freely, rather than thinking about limitations."
+      "text": "Understanding how to design systems is crucial for ensuring that applications last, scale effectively, and remain reliable. Once I grasped the importance of system design, I delved into studying it extensively. Recognizing that many contemporary applications operate in the cloud, I dedicated time to learning relevant cloud technologies, too. I hold <a id='arch' href='https://learn.microsoft.com/en-gb/users/yektademirci-4544/credentials/certification/azure-solutions-architect'><b> Microsoft: Azure Solutions Architect Expert</b></a> certification."
     },
     {
-      "imageLink": "/images/personalSkills/frontEnd.svg",
-      "imageAlt": "front end code icon",
-      "text": "Turning the design mockup into a reality is another form of art. This part of coding requires a lot of attention to detail. No matter how good the rest of your stack is, the front end defines your interaction with the user. In the front end space, I mainly worked on native Android, iOS and Windows Phone applications, and websites."
-    },
-    {
+      "pid": "back",
       "imageLink": "/images/personalSkills/backEnd.svg",
       "imageAlt": "back end code icon",
-      "text": "After the customer taps a button on your front end application, all sorts of magic happens here. The code needs to be clean, modular and easy to modify. Every moving piece has should have a single responsibility. I’ve mainly worked with Spring and NodeJS applications in my professional career."
+      "text": "This is where everything comes together and the magic happens! With applications adopting more of a microservices setup, each part of the backend focuses on handling a specific job hence scripts shall be modular and compact. Throughout my professional journey, I've used <b>Python</b> with <b>Django</b>. I'm also at ease working with <b>C++</b> for time critical tasks."
     },
     {
-      "imageLink": "/images/personalSkills/test.svg",
+      "pid": "front",
+      "imageLink": "/images/personalSkills/frontEnd.svg",
+      "imageAlt": "front end code icon",
+      "text": "Regardless how powerful the magic is; having a user-friendly interface is crucial for any application. Although I've mostly dealt with backend systems, I also get the frontend side. I've got hands-on experience using <b>JavaScript</b> with <b>TypeScript</b> and <b>React</b> in my professional work."
+    },
+    {
+      "pid": "product",
+      "imageLink": "/images/personalSkills/product.svg",
       "imageAlt": "testing icon",
-      "text": "Getting something out there is great but what about it’s reliability? In the hands of a customer, every moving piece has to work together in harmony. Throughout my career, I had the opportunity to work with projects over 1m lines of code. In all my professional work, I’ve applied extensive testing strategies for everything I can."
+      "text": "All the previous skills matter in the end, but only if the product satisfies what the customer needs and fixes their issues. That's why grasping the customer's requirements correctly and providing a solution efficiently is an invaluable skill for any software engineer, even if it is often disregarded. I hold <a id='pspo' href='https://www.scrum.org/user/1281186'><b>PSPO-I and PSM-I</b></a> certifications from Scrum. Additionally, I have completed <a id='pmcert' href='https://www.coursera.org/account/accomplishments/specialization/certificate/WURKQZE3CUT9'><b>Software Product Management</b></a> specialization."
     }
   ]
 }

@@ -7,6 +7,7 @@ const Skills = () => (
   <Section>
     {personalSkills.skillList.map((personalSkill) => (
       <SkillCard
+        pid={personalSkill.pid}
         imageLink={personalSkill.imageLink}
         imageAlt={personalSkill.imageAlt}
         text={personalSkill.text}
