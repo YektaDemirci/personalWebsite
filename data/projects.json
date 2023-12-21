@@ -1,0 +1,164 @@
+{
+  "projectList": [
+    {
+      "id" : "rover",
+      "imageLink": "/images/projects/roverMin.jpg",
+      "imageAlt": "Hololens2 XR Fundamentals",
+      "title": "Hololens2 XR Fundamentals*",
+      "subtitle": "EMBRACE EXTENDED REALITY!",
+      "text": "An app with hand interaction, object tracking, 3D object interaction, eye-tracking and spatial anchors",
+      "modalTitle": "Hololens 2: Developing Mixed Reality Applications",
+      "modalTech": "Unity, MRTK, Hololens2, OpenXR",
+      "modalImageLink": "/images/projects/rover.png",
+      "modalDescription": "In my spare time, I created mixed reality apps using HoloLens 2 by following the Microsoft HoloLens 2 Fundamentals Tutorials. I revised numerous scripts, successfully compiled the projects, and deployed the executables to the HoloLens 2 device. Through this experience, I gained essential insights into hand interaction, object tracking, 3D object interaction, eye-tracking, and spatial anchors.",
+      "codeLink": "https://github.com/YektaDemirci/HoloLens2-trials",
+      "reportLink":"",
+      "presentationLink":""
+
+    },
+    {
+      "id" : "master",
+      "imageLink": "/images/projects/masterMin.jpg",
+      "imageAlt": "Resource allocation for RAN sharing in 5G",
+      "title": "Spectrum Sharing in 5G Networks***",
+      "subtitle": "NEW RADIO: 5G",
+      "text": " An algorithm to share spectrum resources for 5G Radio Access Networks in an efficient and fair way",
+      "modalTitle": "RAN Sharing with FlexRAN",
+      "modalTech": "C/C++, Python, gRPC, 5G, FlexRAN",
+      "modalImageLink": "/images/projects/masters.png",
+      "modalDescription": "During my master's thesis, to support RAN sharing in the context of embracing 5G, I implemented a two-level Weighted Round Robin (WRR) scheduler aimed at ensuring fair and efficient allocation of Physical Resource Blocks (PRBs). Utilizing a third-party, open-source Radio Access Network (RAN) project with an extensive codebase OpenAirInterface and flexRAN in C/C++. I integrated the WRR solution into the eNB source codes. Beyond the WRR implementation, I extended the existing API to enable dynamic switching of the active slice scheduler to WRR on-the-fly via Protobuf. Furthermore, I provided comprehensive guides for setting up a private LTE network, both in the nFAPI emulation of OpenAirInterface and with Commercial Off-The-Shelf (COTS) hardware (bladeRF and LG Velvet phone). To assess the performance of the implemented scheduler against the State of the Art solution, I developed a traffic generator and UDP client/server pairs in Python.",
+      "codeLink": "",
+      "reportLink":"",
+      "presentationLink":""
+
+    },
+    {
+      "id" : "foodHunter",
+      "imageLink": "/images/projects/foodHunterMin.jpg",
+      "imageAlt": "Food Hunter Web App",
+      "title": "Food Hunter Web App**",
+      "subtitle": "WHAT ARE WE CRAVING?",
+      "text": "A web application utilizing Google Maps, Web Crawling and more, practised agile methods",
+      "modalTitle": "Food Hunter Web Application",
+      "modalTech": "Python, Javascript, MongoDB, Jenkins, Selenium",
+      "modalImageLink": "/images/projects/foodHunter.png",
+      "modalDescription": "As a team of five, we developed a web application utilizing MongoDB, Google Maps, and web crawling APIs, along with a technology stack that included JavaScript, HTML, CSS, and Python (Selenium for testing). Our development process involved the implementation of unit, integration, system, and acceptance tests. To enhance user experience, we designed a user-friendly interface consisting of a single page with three sliding bars. The website accepts location and ingredient inputs, leveraging this information to suggest restaurants and meals.",
+      "codeLink": "https://github.com/YektaDemirci/foodHunter",
+      "reportLink":"",
+      "presentationLink":"https://drive.google.com/file/d/1LkJFiDsxUO1RzRtabfqWMFxHFygmQ4oj/view"
+
+    },
+    {
+      "id" : "CNN",
+      "imageLink": "/images/projects/cnnMin.jpg",
+      "imageAlt": "Feature Extraction and CNN",
+      "title": "Feature Extraction and CNN*",
+      "subtitle": "AI IN FASHION",
+      "text": "Feature extraction via PCA, LDA, Isomap, LLE, t-SNE and training ML, CNN models",
+      "modalTitle": "Feature extraction and CNN on Fashion MNIST dataset",
+      "modalTech": "Python, Keras, Scikit-learn",
+      "modalImageLink": "/images/projects/cnn.png",
+      "modalDescription": "For a course project, our two-people team employed various feature extraction methods, including PCA, LDA, Isomap, LLE, and t-SNE. We then trained classical machine learning models such as Decision Tree, SVM, and KNN. Subsequently, we implemented a Convolutional Neural Network and compared the outcomes of these diverse approaches.",
+      "codeLink": "https://github.com/YektaDemirci/grad_assignments/tree/master/DataModellingAnalysis_ECE657A/project",
+      "reportLink":"https://github.com/YektaDemirci/grad_assignments/blob/master/DataModellingAnalysis_ECE657A/project/report.pdf",
+      "presentationLink":""
+
+    },
+    {
+      "id" : "http2",
+      "imageLink": "/images/projects/httpMin.jpg",
+      "imageAlt": "HTTP2 flow classification",
+      "title": "HTTP2 flow classification**",
+      "subtitle": "GUESS THE FLOW PROTOCOL",
+      "text": "Dateset creation from a web traffic colection and HTTP flow prediction with +90% accuracy.",
+      "modalTitle": "Flow level, HTTP-2 Classification with Machine Learning Algorithms",
+      "modalTech": "Python, Scikit-learn",
+      "modalImageLink": "/images/projects/http.png",
+      "modalDescription": "I trained multiple machine learning models (KNN, SVM, CART, ANN) to predict HTTP2 flows based on their predecessor, HTTP1. Initially, I constructed a dataset at the flow level using a publicly available web traffic collection. Using several features, including the HTTP version, I established ground truth through deep packet inspection. Subsequently, I pre-processed the data (utilizing PCA and LDA), trained various ML models, and achieved a classification accuracy exceeding 90%. The project report includes confusion matrices for each model.",
+      "codeLink": "https://github.com/YektaDemirci/grad_assignments/tree/master/ComputerNetworks_CS656/project",
+      "reportLink":"https://github.com/YektaDemirci/grad_assignments/blob/master/ComputerNetworks_CS656/project/ECE_656_Final_Report.pdf",
+      "presentationLink":""
+
+    },
+    {
+      "id" : "VC",
+      "imageLink": "/images/projects/vcMin.jpg",
+      "imageAlt": "Vertex Cover with Multithreading",
+      "title": "Vertex Cover with Multithreading*",
+      "subtitle": "MULTITHREADING",
+      "text": "Polynomial time reduction with approximations to solve a Vertex Cover problem with multithreading in C++",
+      "modalTitle": "Vertex Cover Approximation Algorithms with MultiThread",
+      "modalTech": "C++, MiniSat",
+      "modalImageLink": "/images/projects/vc.png",
+      "modalDescription": "As a two-person team, we employed three distinct approaches to address the Minimum Vertex Cover (VC) problem. Initially, we utilized a polynomial time reduction to the CNF-SAT approach with the minisat library. For a heuristic solution, our second approach involved selecting the vertex with the highest degree and removing all incident edges. In a different approximation strategy, our third approach randomly selected an edge and added its vertices to the Vertex Cover. To compare time performance metrics, we executed all approaches concurrently through multithreading in C++",
+      "codeLink": "https://github.com/YektaDemirci/grad_assignments/tree/master/SoftwareEngineering_ECE650/project",
+      "reportLink":"https://github.com/YektaDemirci/grad_assignments/blob/master/SoftwareEngineering_ECE650/project/report.pdf",
+      "presentationLink":""
+
+    },
+    {
+      "id" : "GPU",
+      "imageLink": "/images/projects/jetsonMin.jpg",
+      "imageAlt": "Real Time Edge Detection with CUDA",
+      "title": "Real Time Edge Detection with CUDA**",
+      "subtitle": "PARALLEL PROGRAMMING",
+      "text": "Real time edge detection using CUDA and GPU",
+      "modalTitle": "GPU programming with Jetson TX2 device in CUDA & C++",
+      "modalTech": "C++, CUDA",
+      "modalImageLink": "/images/projects/jetson.png",
+      "modalDescription": "I introduced myself to GPU programming by implementing scripts for matrix addition and multiplication in .cu. Following that, as a team of two people, we developed a real-time Canny edge detector using CUDA's built-in libraries, complete with a straightforward User Interface (UI). The UI allows users to adjust filtering variables such as blur sigma and window size on the fly. Additionally, we created another application leveraging CUDA libraries, capable of detecting green balls.",
+      "codeLink": "https://github.com/YektaDemirci/CUDA_trials",
+      "reportLink":"",
+      "presentationLink":""
+
+    },
+    {
+      "id" : "robot",
+      "imageLink": "/images/projects/robotMin.jpg",
+      "imageAlt": "Autonomous 2D SLAM robot",
+      "title": "Autonomous 2D SLAM Robot***",
+      "subtitle": "A MILESTONE PROJECT",
+      "text": "A 2D Simultaneous Localization and Mapping (SLAM) robot",
+      "modalTitle": "Design and Implementation of an autonomous 2D SLAM robot",
+      "modalTech": "Python, Arduino, Sklearn",
+      "modalImageLink": "/images/projects/robot.png",
+      "modalDescription": "For our final year capstone project, our team of five individuals designed and implemented a 2D Simultaneous Localization and Mapping (SLAM) robot. This robot not only localizes itself in an unknown area but also conducts 2D mapping and identifies objects along with their center locations. In addition to our group responsibilities, such as documentation and addressing unexpected urgent issues, my primary focus was on noise filtering, implementing novel path planning strategies, and developing object classification algorithms.",
+      "codeLink": "https://github.com/YektaDemirci/undergrad_assignments/tree/master/BachelorGraduationProject_EE493-494",
+      "reportLink":"https://github.com/YektaDemirci/undergrad_assignments/blob/master/BachelorGraduationProject_EE493-494/finalReport.pdf",
+      "presentationLink":"https://www.youtube.com/watch?v=V6gUSqbk-As"
+
+    },
+    {
+      "id" : "fft",
+      "imageLink": "/images/projects/fftMin.jpg",
+      "imageAlt": "FFT and Overlap-Save Algorithms in Real Time",
+      "title": "FFT and Overlap-Save Algorithms in Real Time*",
+      "subtitle": "DIGITAL SIGNAL PROCESSING",
+      "text": "FFT and overlap-save algorithms in C using Linux based Real-Time OS",
+      "modalTitle": "Real Time FFT and Overlap-Save Algorithms using myRIO device",
+      "modalTech": "C, Linux, MATLAB",
+      "modalImageLink": "/images/projects/fft.png",
+      "modalDescription": "For a term project, as a team of two people, we implemented Fast Fourier Transform (FFT) and Overlap & Save algorithms in C. We compiled and ran these algorithms on a myRIO device, which operates on a Linux-based Real-Time Operating System (OS). One of the major challange was compiling the source codes using myRIO device",
+      "codeLink": "https://github.com/YektaDemirci/undergrad_assignments/blob/master/RealTimeApplicationsOfDigitalSignals_EE497/circ.c",
+      "reportLink":"https://github.com/YektaDemirci/undergrad_assignments/blob/master/RealTimeApplicationsOfDigitalSignals_EE497/report.pdf",
+      "presentationLink":""
+
+    },
+    {
+      "id" : "metalBinding",
+      "imageLink": "/images/projects/gemsecMin.jpg",
+      "imageAlt": "Metal Binding Peptide Prediction",
+      "title": "Metal Binding Peptide Prediction**",
+      "subtitle": "TO ORGANIC ELECTRONICS",
+      "text": "An app to predict new metal binding peptides",
+      "modalTitle": "Hololens 2 Fundamentals: Developing Mixed Reality Applications",
+      "modalTech": "Unity, OpenXR, MRTK, Hololens2",
+      "modalImageLink": "/images/projects/gemsec.png",
+      "modalDescription": "During my final summer internship at the University of Washington's GEMSEC lab, I successfully devised and implemented an application geared towards predicting potential metal-binding peptides. The functionality of this application involved taking existing metal-binding peptides as input and leveraging them to anticipate novel candidates. Our approach entailed the creation of various tensors integrating location, property, and peptide information. Subsequently, we employed a multifaceted methodology, employing PCA, wavelet transforms, and a series of clustering algorithms to unravel the intricate correlations between metal binding and other pertinent properties. I took charge of coding the application, implemented it in Python—more than 1000 lines of code where the app takes raw data, makes different cuts, and runs the predictions.",
+      "codeLink": "https://github.com/YektaDemirci/UoWashington_internship",
+      "reportLink":"https://www.biorxiv.org/content/biorxiv/early/2019/08/19/654913.full.pdf",
+      "presentationLink":""
+
+    }
+  ]
+}

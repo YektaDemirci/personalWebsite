@@ -8,13 +8,6 @@ import {
   introMargin,
   introHeadingStyle,
   introSubHeadingStyle,
-  box,
-  firstBox,
-  secondBox,
-  ring,
-  one,
-  two,
-  link
 } from "../stylesheets/components/Hero.module.sass";
 // Some are coming from style.css
 

@@ -1,0 +1,15 @@
+{
+  "aboutMeTitle": "ABOUT ME",
+  "projectsTitle": "PROJECTS",
+  "skillsTitle": "SKILLS",
+  "projectsSub" : "* denotes complexity",
+  "emptySub": "",
+  "landingReference": "landing",
+  "aboutMeReference": "aboutMe",
+  "projectsReference": "projects",
+  "skillsReference": "skills",
+  "contactReference" : "contact",
+  "pageTitle": "Yekta Demirci",
+  "pageDescription": "Hey, this is my personal website. You can take a look at my portfolio, download my CV and see how you can contact me!",
+  "metaImageAlt": "The image contains the logo of this website. The letter Y."
+}

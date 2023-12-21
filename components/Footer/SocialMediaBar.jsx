@@ -1,20 +1,16 @@
 import PropTypes from "prop-types";
 import {
-  FaTwitter,
   FaEnvelope,
-  FaFacebookF,
   FaGithub,
   FaInstagram,
   FaLinkedinIn
 } from "react-icons/fa";
 import SocialMediaIcon from "./SocialMediaIcon";
 import {
-  facebook,
   github,
   instagram,
   linkedin,
   mail,
-  twitter,
   socialMediaButton,
   noVerticalMargin,
   inlineList
@@ -23,20 +19,6 @@ import {
 const SocialMediaBar = ({ socialMediaLinks, buttonBackground }) => (
   <>
     <ul className={`${inlineList} ${noVerticalMargin}`}>
-      <SocialMediaIcon
-        className={`${twitter} ${socialMediaButton} ${buttonBackground}`}
-        link={socialMediaLinks.twitterLink}
-        ariaLabel={socialMediaLinks.twitterAriaLabel}
-      >
-        <FaTwitter />
-      </SocialMediaIcon>
-      <SocialMediaIcon
-        className={`${facebook} ${socialMediaButton} ${buttonBackground}`}
-        link={socialMediaLinks.facebookLink}
-        ariaLabel={socialMediaLinks.facebookAriaLabel}
-      >
-        <FaFacebookF />
-      </SocialMediaIcon>
       <SocialMediaIcon
         className={`${linkedin} ${socialMediaButton} ${buttonBackground}`}
         link={socialMediaLinks.linkedinLink}
@@ -71,10 +53,6 @@ const SocialMediaBar = ({ socialMediaLinks, buttonBackground }) => (
 
 SocialMediaBar.propTypes = {
   socialMediaLinks: PropTypes.shape({
-    twitterLink: PropTypes.string.isRequired,
-    twitterAriaLabel: PropTypes.string.isRequired,
-    facebookLink: PropTypes.string.isRequired,
-    facebookAriaLabel: PropTypes.string.isRequired,
     linkedinLink: PropTypes.string.isRequired,
     linkedinAriaLabel: PropTypes.string.isRequired,
     githubLink: PropTypes.string.isRequired,

@@ -8,24 +8,17 @@ import {
   footerName,
   footerList,
   footerLinks,
-  signature,
   footerLeft,
   footerRight,
   footerListDescription,
   footerListContainer,
-  footerLocation,
-  footerGithubStats,
-  footerGithubStatsLink,
-  footerGithubStatsDiv
+  footerLocation
 } from "../../stylesheets/components/Footer/Footer.module.sass";
 
 import SocialMediaBar from "./SocialMediaBar";
-import Signature from "../Signature";
-import GithubStatistics from "../GithubStatistics";
 import Container from "../Util/Container";
 
 const footer = require("../../data/footer.json");
-const githubStats = require("../../data/githubStats.json");
 
 const Footer = () => (
   <footer className={footerStyle}>
@@ -41,34 +34,8 @@ const Footer = () => (
             {footer.location}
           </p>
           <SocialMediaBar socialMediaLinks={footer.socialMediaLinks} />
-          <div className={footerListContainer}>
-            <p className={`${footerListDescription} ${footerLightText}`}>
-              {footer.linkText}
-            </p>
-            <ul className={`${footerLightText} ${footerList}`}>
-              {footer.links.map((link, index) => (
-                <li key={link} className={footerLinks}>
-                  <a href={link} className={footerDarkText}>
-                    {footer.videos[index]}
-                  </a>
-                </li>
-              ))}
-            </ul>
-          </div>
         </div>
       </Row>
-
-      <Signature isDark className={signature} />
-
-      <div className={footerGithubStatsDiv}>
-        <a href={footer.githubLink} className={footerGithubStatsLink}>
-          <GithubStatistics
-            className={`${footerDarkText} ${footerGithubStats}`}
-            repo={githubStats.repo}
-            username={githubStats.username}
-          />
-        </a>
-      </div>
     </Container>
   </footer>
 );

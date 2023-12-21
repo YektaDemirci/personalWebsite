@@ -1,3 +1,4 @@
+import React, { useState, useEffect } from 'react';
 import PropTypes from "prop-types";
 import {
   point,
@@ -7,7 +8,9 @@ import {
   mobileDescription,
   desktopDescription
 } from "../stylesheets/components/ProjectCard.module.sass";
-import UnstyledLink from "./Util/UnstyledLink";
+import 'react-responsive-modal/styles.css';
+import ProjectModals from "./ProjectModals";
+
 
 const ProjectCard = ({
   imageLink,
@@ -15,21 +18,35 @@ const ProjectCard = ({
   title,
   subtitle,
   text,
-  blogPost
+  modalTitle,
+  modalTech,
+  modalImageLink,
+  modalDescription,
+  codeLink,
+  reportLink,
+  presentationLink
 }) => {
+
+  const { modalContent, onOpenModal } = ProjectModals();
+
   return (
-    <div className={point}>
-      <UnstyledLink to={`/blog/${blogPost}`}>
-        <div className={contentDiv}>
-          <img className={imageDiv} src={imageLink} alt={imageAlt} />
-          <div className={description}>
-            <h4>{title}</h4>
-            <h6>{subtitle}</h6>
-            <p className={desktopDescription}>{text}</p>
-          </div>
-          <p className={mobileDescription}>{text}</p>
+    <div  className={point}>
+      <div className={contentDiv} >
+        <img className={imageDiv} src={imageLink} alt={imageAlt}  onClick={onOpenModal}/>
+        <div className={description} onClick={onOpenModal}>
+          <h4>{title}</h4>
+          <h6>{subtitle}</h6>
+          <p className={desktopDescription}>{text}</p>
         </div>
-      </UnstyledLink>
+        {modalContent({ modalTitle,
+                        modalTech,
+                        modalImageLink,
+                        modalDescription,
+                        codeLink,
+                        reportLink,
+                        presentationLink })}
+        <p className={mobileDescription}>{text}</p>
+      </div>
     </div>
   );
 };
@@ -40,7 +57,13 @@ ProjectCard.propTypes = {
   title: PropTypes.string,
   subtitle: PropTypes.string,
   text: PropTypes.string,
-  blogPost: PropTypes.string
+  modalTitle: PropTypes.string,
+  modalTech: PropTypes.string,
+  modalImageLink: PropTypes.string,
+  modalDescription: PropTypes.string,
+  codeLink: PropTypes.string,
+  reportLink: PropTypes.string,
+  presentationLink: PropTypes.string,
 };
 
 ProjectCard.defaultProps = {
@@ -49,7 +72,13 @@ ProjectCard.defaultProps = {
   title: null,
   subtitle: null,
   text: null,
-  blogPost: null
+  modalTitle: null,
+  modalTech: null,
+  modalImageLink: null,
+  modalDescription: null,
+  codeLink: null,
+  reportLink: null,
+  presentationLink: null,
 };
 
 export default ProjectCard;

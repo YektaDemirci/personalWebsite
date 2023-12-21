@@ -1,0 +1,16 @@
+{
+  "title": "Yekta Demirci",
+  "leftText": "LET'S CONNECT!",
+  "location": "Toronto, CANADA",
+  "socialMediaLinks": {
+    "linkedinLink": "https://www.linkedin.com/in/yektad/",
+    "linkedinAriaLabel": "LinkedIn Profile",
+    "githubLink": "https://github.com/YektaDemirci",
+    "githubAriaLabel": "GitHub Profile",
+    "instagramLink": "https://www.instagram.com/yektademirci",
+    "instagramAriaLabel": "Instagram Profile",
+    "emailLink": "mailto:yekta.dmrc@gmail.com",
+    "emailAriaLabel": "Email Address"
+  },
+  "githubLink": "https://github.com/celikkoseoglu/celikk-personal-website-nextjs"
+}

@@ -1,5 +1,4 @@
 @import "../../../utils/widthPicker"
-@import "../../../utils/variables"
 @import "../../../utils/animationTimer"
 @import "../../../utils/colorPalette"
 
@@ -28,8 +27,8 @@
 .leftText
   font-family: 'Montserrat', sans-serif
   font-weight: 600
-  font-size: 8.5rem
-  line-height: 8.5rem
+  font-size: 5.5rem
+  line-height: 5.5rem
   display: flex
   justify-content: center
   flex-direction: column
@@ -39,8 +38,8 @@
   margin-top: 0
   margin-bottom: 0
   +screen(large)
-    font-size: 6.5rem
-    line-height: 6.5rem
+    font-size: 3.5rem
+    line-height: 3.5rem
   +screen(lessThanMedium)
     font-size: 2.4rem
     line-height: 2rem
@@ -71,13 +70,6 @@
     text-decoration: none
     color: $white
 
-.signature
-  margin-top: 15px
-  margin-bottom: 10px
-  width: 100%
-  +screen(small)
-    margin-top: 10px
-
 .footerLeft
   width: 50%
   display: flex
@@ -100,25 +92,6 @@
   margin-top: 0
   margin-bottom: 10px
 
-.footerListContainer
-  padding-top: 20px
-
 .footerLocation
   margin-bottom: 15px
   margin-top: 0
-
-.footerGithubStats
-  &:hover
-    p
-      color: $white
-    svg
-      color: $white
-
-.footerGithubStatsDiv
-  display: flex
-  justify-content: center
-
-.footerGithubStatsLink
-  text-decoration: none
-  &:hover
-    text-decoration: none

@@ -19,8 +19,14 @@ const Projects = () => (
             title={project.title}
             subtitle={project.subtitle}
             text={project.text}
-            blogPost={project.blogPost}
             key={project.title}
+            modalTitle={project.modalTitle}
+            modalTech={project.modalTech}
+            modalImageLink={project.modalImageLink}
+            modalDescription={project.modalDescription}
+            codeLink={project.codeLink}
+            reportLink={project.reportLink}
+            presentationLink={project.presentationLink}
           />
         ))}
       </Row>
