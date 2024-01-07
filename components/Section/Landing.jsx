@@ -8,57 +8,31 @@ import {
 } from "../../stylesheets/components/Section/Landing.module.sass";
 import Container from "../Util/Container";
 import Hero from "../Hero";
-import { isIPad13 } from "react-device-detect";
-import NoSSR from "react-no-ssr";
 import { getRandomInt } from "../../utils/FileManager.utils";
 import ArrowAnimation from "../Animations/ArrowAnimation";
-import { debounce } from "../../utils/Limitors";
 
 const hero = require("../../data/hero.json");
 
 const imagePaths = [
-  "/images/hero/sunset.jpeg",
+  "/images/hero/waterloo.jpg",
   "/images/hero/canyon.jpg",
+  "/images/hero/sunset.jpeg",
   "/images/hero/desk.jpeg",
 ];
-
-let windowInnerWidth = 0;
 
 const Landing = ({ id, arrowAnimationReference}) => {
   const [imageUrl, setImageUrl] = useState(null);
   const [landingState, setLandingState] = useState(false);
 
-  const handleResize = () => {
-    const currentWindowInnerWidth = window.innerWidth;
-    if (currentWindowInnerWidth !== windowInnerWidth) {
-      windowInnerWidth = currentWindowInnerWidth;
-      const windowInnerHeight = window.innerHeight;
-      document.documentElement.style.setProperty(
-        "--windowInnerHeight",
-        `${windowInnerHeight}px`
-      );
-    }
-  };
-
-  // Does it return true at all?
-  if (isIPad13) {
-    handleResize();
-  }
-
   useEffect(() => {
-    const randomLandingImageNumber = getRandomInt(imagePaths.length);
-    setImageUrl(imagePaths[randomLandingImageNumber]);
-
-    if (isIPad13) {
-      window.addEventListener("resize", debounce(handleResize));
+    if (typeof window !== 'undefined' &&  window.innerWidth > 1000) {
+      const randomLandingImageNumber = getRandomInt(imagePaths.length);
+      setImageUrl(imagePaths[randomLandingImageNumber]);
     }
-
-    return () => {
-      if (isIPad13) {
-        window.removeEventListener("resize", debounce(handleResize));
-      }
-    };
-    // eslint-disable-next-line react-hooks/exhaustive-deps
+    else{
+      const randomLandingImageNumber = getRandomInt(2);
+      setImageUrl(imagePaths[randomLandingImageNumber]);
+    }
   }, []);
   
   const basicPrerender = (
@@ -81,12 +55,10 @@ const Landing = ({ id, arrowAnimationReference}) => {
         />
       </Container>
 
-      <NoSSR>
-        {landingState && <ArrowAnimation
-          className={`${arrowMargin} ${arrowSize}`}
-          reference={arrowAnimationReference}
-        />}
-      </NoSSR>
+      {landingState && <ArrowAnimation
+        className={`${arrowMargin} ${arrowSize}`}
+        reference={arrowAnimationReference}
+      />}
     </header>
   );
 

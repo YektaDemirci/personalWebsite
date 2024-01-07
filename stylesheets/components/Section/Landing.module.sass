@@ -1,6 +1,7 @@
 @import "../../../utils/widthPicker"
 
 .landingBackground
+  height: 100vh
   background: scroll center center
   -webkit-background-size: cover
   -moz-background-size: cover
@@ -10,8 +11,6 @@
   transition: .5s background-image ease-in-out //image doesnt change so this is not necessarily needed
   color: #fff
   +screen(greaterThanMedium)
-    height: 100vh // fallback for unsupported browsers
-    height: var(--windowInnerHeight, 100vh)
     min-height: 665px
 
 .landingContainer
@@ -35,5 +34,5 @@
     height: 170px
     width: 150px
   +screen(lessThanMedium)
-    height: 140px
-    width: 120px
+    height: 110px
+    width: 95px

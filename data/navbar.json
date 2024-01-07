@@ -2,12 +2,12 @@
   "landingReference": "landing",
   "items": [
     {
-      "title":"PROJECTS",
-      "reference": "projects"
-    },
-    {
       "title":"SKILLS",
       "reference": "skills"
+    },
+    {
+      "title":"PROJECTS",
+      "reference": "projects"
     },
     {
       "title":"CONTACT",

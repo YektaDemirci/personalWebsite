@@ -7,6 +7,7 @@ import {
   footerPadding
 } from "../stylesheets/Home.module.sass";
 import Skills from "../components/Section/Skills";
+// import Testimonials from "../components/Testimonials";
 import Footer from "../components/Footer/Footer";
 import getMeta from "../components/Util/MetaGenerator";
 import Heading from "../components/Heading";
@@ -32,10 +33,12 @@ export default function Home() {
       />
       <Heading id={content.aboutMeReference} text={content.aboutMeTitle} sup={content.emptySub}/>
       <AboutMe />
-      <Heading id={content.projectsReference} text={content.projectsTitle} sup={content.projectsSub}/>
-      <Projects />
       <Heading id={content.skillsReference} text={content.skillsTitle} sup={content.emptySub}/>
       <Skills />
+      <Heading id={content.projectsReference} text={content.projectsTitle} sup={content.projectsSub}/>
+      <Projects />
+      {/* <Heading id={content.testimonialReference} text={content.testimonialTitle} sup={content.testimonialSub}/>
+      <Testimonials /> */}
       <div
         id={content.contactReference}
         className={`${footerSpacingBackground} ${footerPadding}`}

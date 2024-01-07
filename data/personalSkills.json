@@ -4,25 +4,25 @@
       "pid": "system",
       "imageLink": "/images/personalSkills/systemDesign.svg",
       "imageAlt": "design icon",
-      "text": "Understanding how to design systems is crucial for ensuring that applications last, scale effectively, and remain reliable. Once I grasped the importance of system design, I delved into studying it extensively. Recognizing that many contemporary applications operate in the cloud, I dedicated time to learning relevant cloud technologies, too. I hold <a id='arch' href='https://learn.microsoft.com/api/credentials/share/en-gb/YektaDemirci-4544/5B7B55090DEE8D0A?sharingId=6B12AEB009A2053A'><b> Microsoft: Azure Solutions Architect Expert</b></a> certification."
+      "text": "Understanding how to design systems using cloud technologies is crucial for ensuring that applications last, scale effectively, and remain reliable. I hold <a id='arch' href='https://learn.microsoft.com/api/credentials/share/en-gb/YektaDemirci-4544/5B7B55090DEE8D0A?sharingId=6B12AEB009A2053A'><b> Microsoft: Azure Solutions Architect Expert</b></a> certification."
     },
     {
       "pid": "back",
       "imageLink": "/images/personalSkills/backEnd.svg",
       "imageAlt": "back end code icon",
-      "text": "This is where everything comes together and the magic happens! With applications adopting more of a microservices setup, each part of the backend focuses on handling a specific job hence scripts shall be modular and compact. Throughout my professional journey, I've used <b>Python</b> with <b>Django</b>. I'm also at ease working with <b>C++</b> for time critical tasks."
+      "text": "This is where everything comes together and the magic happens! In my professional journey, I leveraged my experience with <b>Python</b> with <b>Django</b>, complemented by nonprofessional exposure to <b>Java</b>. I'm also at ease working with <b>C++</b> for time-sensitive services."
     },
     {
       "pid": "front",
       "imageLink": "/images/personalSkills/frontEnd.svg",
       "imageAlt": "front end code icon",
-      "text": "Regardless how powerful the magic is; having a user-friendly interface is crucial for any application. Although I've mostly dealt with backend systems, I also get the frontend side. I've got hands-on experience using <b>JavaScript</b> with <b>TypeScript</b> and <b>React</b> in my professional work."
+      "text": "Regardless how powerful the magic is; having a user-friendly interface is crucial for any application. Although I've mostly dealt with backend systems, I also get the frontend side. I've got hands-on experience using <b>JavaScript</b> with <b>TypeScript</b> and <b>React</b>."
     },
     {
       "pid": "product",
       "imageLink": "/images/personalSkills/product.svg",
       "imageAlt": "testing icon",
-      "text": "All the previous skills matter in the end, but only if the product satisfies what the customer needs and fixes their issues. That's why grasping the customer's requirements correctly and providing a solution efficiently is an invaluable skill for any software engineer, even if it is often disregarded. I hold <a id='pspo' href='https://www.scrum.org/user/1281186'><b>PSPO-I and PSM-I</b></a> certifications from Scrum. Additionally, I have completed <a id='pmcert' href='https://www.coursera.org/account/accomplishments/specialization/certificate/WURKQZE3CUT9'><b>Software Product Management</b></a> specialization."
+      "text": "All the previous skills matter in the end, but only if the product satisfies what the customers need. That's why accurately understanding and meeting the needs while offering effective solutions is crucial to me. I hold <a id='pspo' href='https://www.scrum.org/user/1281186'><b>PSPO-I and PSM-I</b></a> certifications from Scrum. Additionally, I have completed <a id='pmcert' href='https://www.coursera.org/account/accomplishments/specialization/certificate/WURKQZE3CUT9'><b>Software Product Management</b></a> specialization."
     }
   ]
 }

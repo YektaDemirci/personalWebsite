@@ -14,7 +14,7 @@ import {
 const Hero = ({ introHeading,  introLeadIn, resumeButtonText, resumeLink, setLandingState}) => {
   const [showTP, setShowTP] = useState(true);
   const [lastMessage, setLastMessage] = useState("");
-
+  const [screenSize, setScreenSize] = useState(0);
 
   function slowAppear(element, duration) {
     const startOpacity = 0;
@@ -57,6 +57,26 @@ const Hero = ({ introHeading,  introLeadIn, resumeButtonText, resumeLink, setLan
     
   }
 
+  useEffect(() => {
+    const handleResize = () => {
+      setScreenSize(window.innerWidth);
+    };
+    if (typeof window !== 'undefined') {
+      window.addEventListener('resize', handleResize);
+      return () => {
+        window.removeEventListener('resize', handleResize);
+      };
+    }
+  }, []);
+
+  const calculateTopMargin = () => {
+    if (screenSize < 700) {
+      return '30px';
+    } else {
+      return '60px';
+    }
+  };
+
   const renderHTML = (
     <div className={`${introMargin}`}>
       <div className={`${introHeadingStyle} ${introFont}`}>
@@ -81,7 +101,7 @@ const Hero = ({ introHeading,  introLeadIn, resumeButtonText, resumeLink, setLan
       </div>
       <div id="subText" className={`fade-in ${introSubHeadingStyle} ${introFont}`}>{introLeadIn}</div>
 
-      <div id="resume_btn" className={"btn ac_btn fade-in"}>
+      <div id="resume_btn" className={"btn ac_btn fade-in"}  style={{ marginTop: calculateTopMargin() }} >
         {/* <dev className={`${introFont} ring btn_resume`}></dev> */}
         <a href={resumeLink} className={`${introFont} ring btn_resume`}>{resumeButtonText}</a>
         <div className={`${introFont} ring one`}></div>

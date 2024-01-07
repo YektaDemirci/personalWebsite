@@ -18,7 +18,6 @@ import Container from "../Util/Container";
 import NavbarToggle from "./NavbarToggle";
 import { debounce, throttle } from "../../utils/Limitors";
 import BrandingLogo from "../Animations/BrandingLogo";
-import {landState} from "../Section/Landing";
 
 const content = require("../../data/navbar.json");
 
@@ -74,9 +73,8 @@ const NavigationBar = () => {
       }`}
     >
       <Container className={navbarContainer}>
-        {/* The following div is the logo on the top left */}
         <div className={mobileNavbar}>
-          {<NavbarItem
+          <NavbarItem
             className={brandContainer}
             reference={content.landingReference}
           >
@@ -85,14 +83,13 @@ const NavigationBar = () => {
               fillColor={"#F0F0F0"}
               strokeColor={"#F0F0F0"}
             />
-          </NavbarItem>}
+          </NavbarItem>
           <NavbarToggle
             onClickMethod={setMobileNavbarCollapsed}
             collapsed={mobileNavbarCollapsed}
             className={navbarToggle}
           />
         </div>
-        {/* The following are the links */}
         <div
           className={`${navbarLinks} ${
             mobileNavbarCollapsed
@@ -102,9 +99,9 @@ const NavigationBar = () => {
         >
           {content.items.map((item) => (
             <NavbarItem
-              className={whiteLink}
               reference={item.reference}
-              href={item.href}  
+              href={item.href}
+              className={whiteLink}
               key={item.title}
             >
               {item.title}

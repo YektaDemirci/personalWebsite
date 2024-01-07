@@ -15,6 +15,7 @@
     "gray-matter": "4.0.3",
     "imagemin-optipng": "8.0.0",
     "markdown-to-jsx": "7.3.2",
+    "mdb-react-ui-kit": "^7.0.0",
     "next": "14.0.3",
     "next-mdx-remote": "4.4.1",
     "prop-types": "15.8.1",
