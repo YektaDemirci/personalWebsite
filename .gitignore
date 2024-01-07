@@ -40,3 +40,6 @@ yarn-error.log*
 /.next/
 /.firebase/
 /firebaserc
+.firebase/
+.next/
+.firebaserc
