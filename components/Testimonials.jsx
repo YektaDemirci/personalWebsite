@@ -68,7 +68,6 @@ const Testimonials = () => {
           showThumbs={false}
           centerMode={true}
           centerSlidePercentage={60}
-          autoFocus={true}
           useKeyboardArrows={true}
           selectedItem={1}
           swipeable={true}

@@ -9,10 +9,9 @@
   "aboutMeReference": "aboutMe",
   "projectsReference": "projects",
   "skillsReference": "skills",
+  "testimonialReference": "testimonials",
   "contactReference" : "contact",
   "pageTitle": "Yekta Demirci",
   "pageDescription": "Hey, this is my personal website. You can take a look at my portfolio, download my CV and see how you can contact me!",
-  "metaImageAlt": "The image contains the logo of this website. The letter Y.",
-  "testimonialReference": "testimonials",
-  "testimonialSub": ""
+  "metaImageAlt": "The image contains the logo of this website. The letter Y."
 }

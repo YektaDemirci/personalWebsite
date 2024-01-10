@@ -11,7 +11,6 @@ import Testimonials from "../components/Testimonials";
 import Footer from "../components/Footer/Footer";
 import getMeta from "../components/Util/MetaGenerator";
 import Heading from "../components/Heading";
-import NoSSR from "react-no-ssr";
 
 const content = require("../data/content.json");
 
@@ -38,14 +37,9 @@ export default function Home() {
       <Skills />
       <Heading id={content.projectsReference} text={content.projectsTitle} sup={content.projectsSub}/>
       <Projects />
-      <NoSSR>
-        <Heading id={content.testimonialReference} text={content.testimonialTitle} sup={content.testimonialSub}/>
-        <Testimonials />
-      </NoSSR>
-      <div
-        id={content.contactReference}
-        className={`${footerSpacingBackground} ${footerPadding}`}
-      >
+      <Heading id={content.testimonialReference} text={content.testimonialTitle} sup={content.emptySub}/>
+      <Testimonials />
+      <div id={content.contactReference} className={`${footerSpacingBackground} ${footerPadding}`}>
         <Footer />
       </div>
     </>
