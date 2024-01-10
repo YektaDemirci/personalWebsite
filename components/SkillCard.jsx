@@ -24,12 +24,6 @@ const SkillCard = ({ pid, imageLink, imageAlt, text }) => {
         anchor3.style.color = '#212529';
       }
     }
-    // if (anchor2){
-    //   anchor2.style.color = '#212529';
-    // }
-    // if (anchor3){
-    //   anchor3.style.color = 'black';
-    // }
   }, [text, pid]);
 
   return (

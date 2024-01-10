@@ -7,7 +7,7 @@ const optimizedImages = require("next-optimized-images");
  */
 module.exports = () => {
   const plugins = [optimizedImages /*, other plugins go here after the comma*/];
-  return plugins.reduce(
+  const nextConfig = plugins.reduce(
     (acc, next) => {
       if (next.name === "optimizedImages") {
         return next(acc, {
@@ -38,4 +38,10 @@ module.exports = () => {
       },
     }
   );
+  return {
+    ...nextConfig,
+    externals: {
+      jquery: 'jQuery',
+    },
+  };
 };

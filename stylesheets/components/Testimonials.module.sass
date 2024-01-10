@@ -1,0 +1,194 @@
+@import "../../utils/widthPicker"
+@import "../../utils/colorPalette"
+
+.customTestimonialContainer
+  margin-left: auto
+  margin-right: auto
+  width: 90%
+  +screen(large)
+    width: 60%
+  +screen(extraLarge)
+    width: 60%
+  +screen(greaterThanLarge)
+    width: 60%
+
+.foreItem
+  z-index: 5
+  background: $dark-pale-grey
+  transform: scale(1.1)
+  transition: transform 0.75s ease
+  filter: blur(0px)
+  width: 90%
+  margin-left: auto
+  margin-right: auto
+  border-radius: 10px
+  margin-top: 40px
+  margin-bottom: 30px
+
+.backItem
+  z-index: 4
+  background: $pale-grey
+  transform: scale(0.9)
+  transition: transform 0.75s ease
+  filter: blur(3px)
+  width: 90%
+  margin-left: auto
+  margin-right: auto
+  border-radius: 10px
+  margin-top: 40px
+  margin-bottom: 30px
+
+.testimonialArrow
+  width: 25px !important
+  height: 25px !important
+  +screen(small)
+    width: 20px !important
+    height: 20px !important
+  +screen(medium)
+    width: 20px !important
+    height: 20px !important
+
+.testimonialRound
+  display: flex
+  justify-content: center
+  align-items: center
+  position: absolute
+  cursor: pointer
+  z-index: 10
+  border-width: 2px
+  top: 50%
+  border-radius: 50%
+  padding: 20px
+  width: 20px
+  height: 20px
+  border-color: $space-grey
+  transition: transform 0.1s ease-in-out
+  transform: scale(1)
+  &:hover
+    transform: scale(1.015)
+    border-color: $space-grey
+  +screen(small)
+    border-width: 1.5px
+    padding: 15px
+  +screen(medium)
+    border-width: 1.5px
+    padding: 15px 
+
+
+.quoteBox
+  display: inline-block
+  padding-top: 15px
+  +screen(greaterThanLarge)
+    padding-top: 30px
+  +screen(greaterThanLarge)
+    padding-top: 30px
+  +screen(greaterThanLarge)
+    padding-top: 30px
+
+.quoteImage
+  position: relative !important
+  left: -25% !important
+  height: auto !important
+  width: 30px !important
+  +screen(large)
+    left: -35% !important
+    width: 8% !important
+  +screen(extraLarge)
+    left: -35% !important
+    width: 8% !important
+  +screen(greaterThanLarge)
+    left: -35% !important
+    width: 8% !important
+
+.quoteText
+  position: relative !important
+  color: $space-grey !important
+  padding-top: 20px !important
+  padding-right: 12% !important
+  padding-left: 12% !important
+  font-family: Avenir-Roman, sans-serif !important
+  font-size: 16px !important
+  margin-bottom: 0 !important
+  +screen(small)
+    padding-top: 10px !important
+    font-size: 10px !important
+    padding-right: 8% !important
+    padding-left: 8% !important
+  +screen(medium)
+    padding-top: 10px !important
+    font-size: 10px !important
+    padding-right: 8% !important
+    padding-left: 8% !important
+
+.quoteLink
+  text-decoration: none
+  color: $space-grey
+  &:hover
+    text-decoration: underline $space-grey
+
+.refBox
+  display: flex !important
+  align-items: center !important
+  justify-content: center !important
+  padding-top: 15px
+  padding-bottom: 15px
+  +screen(greaterThanLarge)
+    padding-top: 30px
+    padding-bottom: 30px
+  +screen(greaterThanLarge)
+    padding-top: 30px
+    padding-bottom: 30px
+  +screen(greaterThanLarge)
+    padding-top: 30px
+    padding-bottom: 30px
+
+.refImage
+  position: relative !important
+  left: -5% !important
+  border-radius: 50% !important
+  width: 20% !important
+  +screen(large)
+    left: 0 !important
+    width: 12% !important
+  +screen(extraLarge)
+    left: 0 !important
+    width: 12% !important
+  +screen(greaterThanLarge)
+    left: 0 !important
+    width: 12% !important
+
+.refTitles
+  position: relative !important
+  right: -5% !important
+  display: inline-block !important
+  width: 40% !important
+  +screen(large)
+    right: 0 !important
+  +screen(extraLarge)
+    right: 0 !important
+  +screen(greaterThanLarge)
+    right: 0 !important
+
+.refName
+  font-family: Avenir-Roman, sans-serif !important
+  margin: 0 !important
+  font-size: 2vw !important
+  max-width: 100% !important
+  +screen(large)
+    font-size: 0.8vw !important
+  +screen(extraLarge)
+    font-size: 0.8vw !important
+  +screen(greaterThanLarge)
+    font-size: 0.8vw !important
+
+.refTitle
+  font-family: Avenir-Roman, sans-serif !important
+  margin: 0 !important
+  font-size: 2vw !important
+  max-width: 100% !important
+  +screen(large)
+    font-size: 0.8vw !important
+  +screen(extraLarge)
+    font-size: 0.8vw !important
+  +screen(greaterThanLarge)
+    font-size: 0.8vw !important

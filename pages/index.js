@@ -7,10 +7,11 @@ import {
   footerPadding
 } from "../stylesheets/Home.module.sass";
 import Skills from "../components/Section/Skills";
-// import Testimonials from "../components/Testimonials";
+import Testimonials from "../components/Testimonials";
 import Footer from "../components/Footer/Footer";
 import getMeta from "../components/Util/MetaGenerator";
 import Heading from "../components/Heading";
+import NoSSR from "react-no-ssr";
 
 const content = require("../data/content.json");
 
@@ -37,8 +38,10 @@ export default function Home() {
       <Skills />
       <Heading id={content.projectsReference} text={content.projectsTitle} sup={content.projectsSub}/>
       <Projects />
-      {/* <Heading id={content.testimonialReference} text={content.testimonialTitle} sup={content.testimonialSub}/>
-      <Testimonials /> */}
+      <NoSSR>
+        <Heading id={content.testimonialReference} text={content.testimonialTitle} sup={content.testimonialSub}/>
+        <Testimonials />
+      </NoSSR>
       <div
         id={content.contactReference}
         className={`${footerSpacingBackground} ${footerPadding}`}

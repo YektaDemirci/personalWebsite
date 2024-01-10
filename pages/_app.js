@@ -36,9 +36,6 @@ function MyApp({ Component, pageProps }) {
         />
         <meta name="robots" content="index, follow" />
         <meta name="author" content="Yekta Demirci" />
-        <link rel="icon" href="/logo.png" />
-        <link rel="manifest" href="/site.webmanifest" />
-        <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#111111" />
         <meta name="msapplication-TileColor" content="#2b5797" />
         <meta name="theme-color" content="#111111" />
       </Head>

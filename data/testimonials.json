@@ -1,0 +1,30 @@
+{
+    "svgLink":"/images/testimonials/quote.svg",
+    "curr0": {
+        "id" : "curr0",
+        "textShort": "Yekta collaborated directly with me during his summer research internship in 2018-2019. He possesses an innate understanding of the tasks at hand, requiring little guidance, yet he knows precisely when to seek assistance or clarification, leaving me with complete confidence in the final product.",
+        "textLong": " Yekta's sense of responsibility, strong work ethic, and unwavering determination for success make him an invaluable asset to any company.",
+        "link": "https://www.linkedin.com/in/yektad/details/recommendations/",
+        "picLink": "/images/testimonials/sid.jpeg",
+        "refName": "Siddharth Rath, PhD",
+        "refTitle": "Researcher"
+      },
+    "curr1": {
+        "id" : "curr1",
+        "textShort": "At Interaptix, Yekta proved himself to be a formidable force in backend development. He was instrumental in the creation of numerous innovative features and made significant enhancements to several APIs, demonstrating a keen eye for optimization and scalability. His dedication and skill turned complex projects into well-structured, efficient systems.",
+        "textLong": " With Yekta on board, you're not just gaining a developer, you're welcoming a catalyst for improvement and innovation.",
+        "link": "https://www.linkedin.com/in/yektad/details/recommendations/",
+        "picLink": "/images/testimonials/dae.jpeg",
+        "refName": "Daehyun Lee, MBA",
+        "refTitle": "CTO at Interaptix"
+      },
+      "curr2": {
+        "id" : "curr2",
+        "textShort": "What sets Yekta apart is not only his proficiency in the technical domain but also his continuous commitment to personal and professional growth. In addition to his expertise in web development, Yekta has cultivated knowledge in diverse domains, including computer networks, cloud technologies, machine learning, and virtual reality.",
+        "textLong": " This extensive and varied skill set positions Yekta as one of the most outstanding software engineers I've had the privilege of working alongside.",
+        "link": "https://www.linkedin.com/in/yektad/details/recommendations/",
+        "picLink": "/images/testimonials/emre.jpeg",
+        "refName": "Emre Dogan, MASc",
+        "refTitle": "Software Engineer"
+      }
+}
