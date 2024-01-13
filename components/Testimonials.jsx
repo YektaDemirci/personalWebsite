@@ -88,12 +88,11 @@ const Testimonials = () => {
         >
           {/* I actually tried to use a json with map and a card to avoid following lines of repetition but Carousel didnt render properly
           The following code smell can be improved */}
-
+          
           <div id={testimons.curr0.id} className={`testimonial-item ${backItem}`}>
             <div className={quoteBox}>
                 <img  className={quoteImage}  src={testimons.svgLink} alt="quote image" />
                 <p className={quoteText}> {largeScreen ? (<>{testimons.curr0.textShort} <br/> <br/> {testimons.curr0.textLong}</>):(<>{testimons.curr0.textShort} </>)} <br/>  <a className={quoteLink} href={testimons.curr1.link}>.....</a> </p>
-                
             </div>
             <div className={refBox}>
                 <img  className={refImage}  src={testimons.curr0.picLink} alt="quote image" />

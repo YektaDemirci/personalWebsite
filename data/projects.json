@@ -122,7 +122,7 @@
       "modalTitle": "Design and Implementation of an autonomous 2D SLAM robot",
       "modalTech": "Python, Arduino, Sklearn",
       "modalImageLink": "/images/projects/robot.png",
-      "modalDescription": "For our final year capstone project, our team of five individuals designed and implemented a 2D Simultaneous Localization and Mapping (SLAM) robot. This robot not only localizes itself in an unknown area but also conducts 2D mapping and identifies objects along with their center locations. In addition to our group responsibilities, such as documentation and addressing unexpected urgent issues, my primary focus was on noise filtering, implementing novel path planning strategies, and developing object classification algorithms.",
+      "modalDescription": "As a team of five, we designed and built a 2D Simultaneous Localization and Mapping (SLAM) robot. This robot does not only localize itself in an unknown area but also conducts 2D mapping and identifies objects along with their center locations. In addition to our group responsibilities, such as documentation and addressing unexpected urgent issues, my primary focus was on noise filtering, implementing novel path planning strategies, and developing object classification algorithms.",
       "codeLink": "https://github.com/YektaDemirci/undergrad_assignments/tree/master/BachelorGraduationProject_EE493-494",
       "reportLink":"https://github.com/YektaDemirci/undergrad_assignments/blob/master/BachelorGraduationProject_EE493-494/finalReport.pdf",
       "presentationLink":"https://www.youtube.com/watch?v=V6gUSqbk-As"
