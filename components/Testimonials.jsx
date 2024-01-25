@@ -22,11 +22,10 @@ import {
 const testimons = require("../data/testimonials.json");
 
 const Testimonials = () => {
-  const [currID, setCurrID] = useState(1);
+  // You need to change this if you add new testimonials
+  const [currID, setCurrID] = useState(2);
   const [largeScreen, setLargeScreen] = useState(false);
   const [ratio, setRatio] = useState(50);
-
-
 
   useEffect(() => {
     const elementsWithCurr = document.querySelectorAll('div[id*="curr"]');
@@ -69,7 +68,7 @@ const Testimonials = () => {
           centerMode={true}
           centerSlidePercentage={60}
           useKeyboardArrows={true}
-          selectedItem={1}
+          selectedItem={2}
           swipeable={true}
           showStatus={false}
           showIndicators={false}
@@ -132,7 +131,36 @@ const Testimonials = () => {
                 </div>
             </div>
           </div>
+          
+          <div id={testimons.curr3.id} className={`testimonial-item ${backItem}`}>
+            <div className={quoteBox}>
+                <img  className={quoteImage}  src={testimons.svgLink} alt="quote image" />
+                <p className={quoteText}> {largeScreen ? (<>{testimons.curr3.textShort} <br/> <br/> {testimons.curr3.textLong}</>):(<>{testimons.curr3.textShort} </>)} <br/>  <a className={quoteLink} href={testimons.curr3.link}>.....</a> </p>
+                
+            </div>
+            <div className={refBox}>
+                <img  className={refImage}  src={testimons.curr3.picLink} alt="quote image" />
+                <div className={refTitles}>
+                  <h4 className={refName} >{testimons.curr3.refName}</h4>
+                  <h5 className={refTitle} >{testimons.curr3.refTitle}</h5>
+                </div>
+            </div>
+          </div>
 
+          <div id={testimons.curr4.id} className={`testimonial-item ${backItem}`}>
+            <div className={quoteBox}>
+                <img  className={quoteImage}  src={testimons.svgLink} alt="quote image" />
+                <p className={quoteText}> {largeScreen ? (<>{testimons.curr4.textShort} <br/> <br/> {testimons.curr4.textLong}</>):(<>{testimons.curr4.textShort} </>)} <br/>  <a className={quoteLink} href={testimons.curr4.link}>.....</a> </p>
+                
+            </div>
+            <div className={refBox}>
+                <img  className={refImage}  src={testimons.curr4.picLink} alt="quote image" />
+                <div className={refTitles}>
+                  <h4 className={refName} >{testimons.curr4.refName}</h4>
+                  <h5 className={refTitle} >{testimons.curr4.refTitle}</h5>
+                </div>
+            </div>
+          </div>
         </Carousel>
       </div>
     </div>

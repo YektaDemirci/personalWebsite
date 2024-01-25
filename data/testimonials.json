@@ -9,8 +9,17 @@
         "refName": "Siddharth Rath, PhD",
         "refTitle": "Researcher at U.Washington"
       },
-    "curr1": {
+      "curr1": {
         "id" : "curr1",
+        "textShort": "I had the pleasure of working closely with Yekta at Interaptix Augmented Reality. I was the Head of Product, and Yekta was an exceptional full-stack software developer. His contributions to the software development team significantly enhanced the success and stability of our product. Yekta possesses unwavering commitment to a customer and market-focused mindset.",
+        "textLong": "I am confident that Yekta will continue to excel in any role that demands a talented, customer-focused, strategically minded team member.",
+        "link": "https://www.linkedin.com/in/yektad/details/recommendations/",
+        "picLink": "/images/testimonials/lisa.jpeg",
+        "refName": "Lisa Black, MBA",
+        "refTitle": "Head of Product"
+      },
+    "curr2": {
+        "id" : "curr2",
         "textShort": "At Interaptix, Yekta proved himself to be a formidable force in backend development. He was instrumental in the creation of numerous innovative features and made significant enhancements to several APIs, demonstrating a keen eye for optimization and scalability. His dedication and skill turned complex projects into well-structured, efficient systems.",
         "textLong": " With Yekta on board, you're not just gaining a developer, you're welcoming a catalyst for improvement and innovation.",
         "link": "https://www.linkedin.com/in/yektad/details/recommendations/",
@@ -18,8 +27,17 @@
         "refName": "Daehyun Lee, MBA",
         "refTitle": "CTO at Interaptix"
       },
-      "curr2": {
-        "id" : "curr2",
+      "curr3": {
+        "id" : "curr3",
+        "textShort": "Yekta created new functionality in our REST API and helped us transition critical endpoints to our new GraphQL API. Yekta made improvements to our data processing pipelines heavily utilizing Python, Django, Celery, and working with Azure Cloud resources. The results of Yekta's efforts were seen by our customers directly and the changes he made have brought lasting value to our product.",
+        "textLong": "I would wholeheartedly recommend Yekta as I have no doubt that he can accomplish whatever task he puts his mind to.",
+        "link": "https://www.linkedin.com/in/yektad/details/recommendations/",
+        "picLink": "/images/testimonials/luke.jpeg",
+        "refName": "Luke Elliott",
+        "refTitle": "Lead Engineer at Interaptix"
+      },
+      "curr4": {
+        "id" : "curr4",
         "textShort": "What sets Yekta apart is not only his proficiency in the technical domain but also his continuous commitment to personal and professional growth. In addition to his expertise in web development, Yekta has cultivated knowledge in diverse domains, including computer networks, cloud technologies, machine learning, and virtual reality.",
         "textLong": " This extensive and varied skill set positions Yekta as one of the most outstanding software engineers I've had the privilege of working alongside.",
         "link": "https://www.linkedin.com/in/yektad/details/recommendations/",

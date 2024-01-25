@@ -76,13 +76,18 @@
 
 
 .quoteBox
+  height: 260px !important
+  overflow: hidden !important
   display: inline-block
   padding-top: 15px
   +screen(greaterThanLarge)
+    height: 400px !important
     padding-top: 30px
   +screen(greaterThanLarge)
+    height: 400px !important
     padding-top: 30px
   +screen(greaterThanLarge)
+    height: 400px !important
     padding-top: 30px
 
 .quoteImage
@@ -127,19 +132,20 @@
     text-decoration: underline $space-grey
 
 .refBox
+  height: 50px !important
+  overflow: hidden !important
   display: flex !important
   align-items: center !important
   justify-content: center !important
-  padding-top: 15px
-  padding-bottom: 15px
+  padding-bottom: 10px
   +screen(greaterThanLarge)
-    padding-top: 30px
+    height: 100px !important
     padding-bottom: 30px
   +screen(greaterThanLarge)
-    padding-top: 30px
+    height: 100px !important
     padding-bottom: 30px
   +screen(greaterThanLarge)
-    padding-top: 30px
+    height: 100px !important
     padding-bottom: 30px
 
 .refImage
