@@ -1,27 +1,10 @@
 import "../globals.sass";
-import { useEffect } from "react";
 import Head from "next/head";
 import { Analytics } from "@vercel/analytics/react";
 import "../stylesheets/components/style.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 
 function MyApp({ Component, pageProps }) {
-  useEffect(() => {
-    const prefersColorSchemeWatcher = window.matchMedia(
-      "(prefers-color-scheme: dark)"
-    );
-
-    // If the browser doesn't support prefers-color-scheme
-    // then don't call addEventListener on a null object
-    if (prefersColorSchemeWatcher.matches) {
-      prefersColorSchemeWatcher.addEventListener("change", () => {
-        const favicon = document.querySelector('link[rel="icon"]');
-        favicon.href = null;
-        favicon.href = "/logo.png";
-      });
-    }
-  }, []);
-
   return (
     <>
       <Head>

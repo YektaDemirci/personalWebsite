@@ -18,6 +18,9 @@
   +screen(small)
     width: 100%
 
+.smallScreenImage
+  display: flex
+
 .image
   width: 300px
   height: 300px
@@ -26,7 +29,10 @@
   border-radius: 100%
   transition: filter .2s
   +screen(lessThanMedium)
-    display: none
+    width: 150px
+    height: 150px
+    filter: grayscale(0%) !important
+    border: 2px solid $oxidised-silver
   +screen(large)
     width: 250px
     height: 250px

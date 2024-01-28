@@ -11,6 +11,8 @@ import Testimonials from "../components/Testimonials";
 import Footer from "../components/Footer/Footer";
 import getMeta from "../components/Util/MetaGenerator";
 import Heading from "../components/Heading";
+import World from "../components/World";
+
 
 const content = require("../data/content.json");
 
@@ -26,6 +28,7 @@ export default function Home() {
   return (
     <>
       {meta}
+      {/* <World/> */}
       <NavigationBar/>
       <Landing
         id={content.landingReference}
