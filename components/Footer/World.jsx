@@ -17,8 +17,8 @@ const World = () => {
       fetch('./images/globe/cities.geojson').then(res => res.json()).then(({ features }) => setPlaces(features));
 
       if (typeof window !== 'undefined') {
-        if (window.innerWidth < 767){
-          setGlobeSize(250);
+        if (window.innerWidth < 450){
+          setGlobeSize(window.innerWidth-70);
         }
       }
 
@@ -32,7 +32,7 @@ const World = () => {
         {
           lat: 35.1495,
           lng: -90.0490,
-          altitude: 1.4,
+          altitude: 1.7,
         },
         startTime
       );
@@ -49,8 +49,10 @@ const World = () => {
             backgroundColor="rgba(45, 45, 45, 1)"
             height={globeSize}
             width={globeSize}
-            showAtmosphere={false}
             animateIn={true}
+            showAtmosphere={true}
+            atmosphereColor={"white"}
+            atmosphereAltitude={0.15}
 
             labelsData={places}
             labelLat={d => d.properties.latitude}
