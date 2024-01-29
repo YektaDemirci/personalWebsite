@@ -20,7 +20,7 @@
         {"type":"Feature","properties":{"name":"Very Soon!", "latitude":23.1136,"longitude":-82.3666}},
         {"type":"Feature","properties":{"name":"Soon", "latitude":-13.1632,"longitude":-72.5453}},
         {"type":"Feature","properties":{"name":"Soon", "latitude":-22.9068,"longitude":-43.1729}},
-        {"type":"Feature","properties":{"name":"You got me! :P", "latitude":-90.0000,"longitude":45.0000}},
+        {"type":"Feature","properties":{"name":"You found me! :P", "latitude":-90.0000,"longitude":45.0000}},
 
         {"type":"Feature","properties":{"name":"London", "latitude":51.5072,"longitude":-0.1276}},
         {"type":"Feature","properties":{"name":"Paris", "latitude":48.8566,"longitude":2.3522}},
