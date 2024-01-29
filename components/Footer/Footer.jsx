@@ -1,20 +1,16 @@
 import Row from "../Util/Row";
 import {
   footerStyle,
-  footerDarkText,
   footerLightText,
-  leftText,
+  bigText,
   lineSeparator,
   footerName,
-  footerList,
-  footerLinks,
   footerLeft,
   footerRight,
-  footerListDescription,
-  footerListContainer,
   footerLocation
 } from "../../stylesheets/components/Footer/Footer.module.sass";
 
+import World from "./World";
 import SocialMediaBar from "./SocialMediaBar";
 import Container from "../Util/Container";
 
@@ -25,10 +21,10 @@ const Footer = () => (
     <Container noPadding>
       <Row>
         <div className={`${footerLeft} ${lineSeparator}`}>
-          <p className={`${leftText} ${footerLightText}`}>{footer.leftText}</p>
+          <World/>
         </div>
-
         <div className={`${footerRight}`}>
+          <p className={`${bigText} ${footerLightText}`}>{footer.bigText}</p>
           <p className={`${footerLightText} ${footerName}`}>{footer.title}</p>
           <p className={`${footerLightText} ${footerLocation}`}>
             {footer.location}
