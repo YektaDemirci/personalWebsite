@@ -27,7 +27,7 @@ export default function Home() {
     <>
       {meta}
       <NavigationBar/>
-      <Landing
+      {/* <Landing
         id={content.landingReference}
         arrowAnimationReference={content.aboutMeReference}
       />
@@ -38,7 +38,7 @@ export default function Home() {
       <Heading id={content.projectsReference} text={content.projectsTitle} sup={content.projectsSub}/>
       <Projects />
       <Heading id={content.testimonialReference} text={content.testimonialTitle} sup={content.emptySub}/>
-      <Testimonials />
+      <Testimonials /> */}
       <div id={content.contactReference} className={`${footerSpacingBackground} ${footerPadding}`}>
         <Footer />
       </div>

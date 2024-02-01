@@ -40,6 +40,7 @@ const World = () => {
       globeRef.current.controls().autoRotate = true;
       globeRef.current.controls().autoRotateSpeed = 1.2;
     }, [globeReady]);
+
   
     return (
         <Globe
@@ -63,7 +64,12 @@ const World = () => {
             labelColor={() => 'rgba(0, 0, 0, 1)'}
             labelResolution={3}
             labelAltitude={0.01}
-            
+
+            polygonsData={countries.features.filter(d => d.properties.ISO_A2 !== 'AQ')}
+            polygonAltitude={0.01}
+            polygonCapColor={({ properties: d }) => { if (d.ADMIN == "United States of America") {return 'rgba(5, 5, 5, 0.6)'} else {return 'rgba(200, 0, 0, 0.6)'}}}
+            polygonLabel={({ properties: d }) => `<b>${d.ADMIN}</b>`}
+
         />
     );
   };
