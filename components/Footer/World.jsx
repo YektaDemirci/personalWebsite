@@ -40,7 +40,7 @@ const World = () => {
         startTime
       );
       // Auto-rotate
-      globeRef.current.controls().autoRotate = false;
+      globeRef.current.controls().autoRotate = true;
       globeRef.current.controls().autoRotateSpeed = 1.2;
     }, [globeReady]);
 
