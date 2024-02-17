@@ -38,10 +38,10 @@
         {"type":"Feature","properties":{"name":"Petersburg", "latitude":59.9343, "longitude":30.3351}},
         {"type":"Feature","properties":{"name":"Istanbul", "latitude":41.0082, "longitude":28.9784}},
         {"type":"Feature","properties":{"name":"Ankara", "latitude":39.9334, "longitude":32.8597}},
-        {"type":"Feature","properties":{"name":"Antalya", "latitude":36.8969, "longitude":30.7133}},
+        {"type":"Feature","properties":{"name":"Izmir", "latitude":38.4237, "longitude":27.1428}},
         {"type":"Feature","properties":{"name":"Antep", "latitude":37.0660, "longitude":37.3781}},
         {"type":"Feature","properties":{"name":"Trabzon", "latitude":41.0027, "longitude":39.7168}},
-        {"type":"Feature","properties":{"name":"Nicosia", "latitude":35.1856, "longitude":33.3823}},
+        {"type":"Feature","properties":{"name":"Lefkosa", "latitude":35.1856, "longitude":33.3823}},
         {"type":"Feature","properties":{"name":"Doha", "latitude":25.2854, "longitude":51.5310}},
 
         {"type":"Feature","properties":{"name":"Tokyo", "latitude":35.6895, "longitude":139.6917}},

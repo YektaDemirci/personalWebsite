@@ -7,14 +7,17 @@ const World = () => {
     const [globeReady, setGlobeReady] = useState(false);
     const [countries, setCountries] = useState({ features: []});
     const [places, setPlaces] = useState([]);
+    const [visited, setVisited] = useState([]);
     const [globeSize, setGlobeSize] = useState(450);
 
     const earthImg = "./images/globe/globe.png";  
     const startTime = 1000;
 
     useEffect(() => {
+  
       fetch('./images/globe/places.geojson').then(res => res.json()).then(setCountries);
       fetch('./images/globe/cities.geojson').then(res => res.json()).then(({ features }) => setPlaces(features));
+      fetch('./images/globe/visitedCities.geojson').then(res => res.json()).then(({ countries }) =>  setVisited(countries));
 
       if (typeof window !== 'undefined') {
         if (window.innerWidth < 450){
@@ -37,7 +40,7 @@ const World = () => {
         startTime
       );
       // Auto-rotate
-      globeRef.current.controls().autoRotate = true;
+      globeRef.current.controls().autoRotate = false;
       globeRef.current.controls().autoRotateSpeed = 1.2;
     }, [globeReady]);
 
@@ -67,9 +70,9 @@ const World = () => {
 
             polygonsData={countries.features.filter(d => d.properties.ISO_A2 !== 'AQ')}
             polygonAltitude={0.01}
-            polygonCapColor={({ properties: d }) => { if (d.ADMIN == "United States of America") {return 'rgba(5, 5, 5, 0.6)'} else {return 'rgba(200, 0, 0, 0.6)'}}}
-            polygonLabel={({ properties: d }) => `<b>${d.ADMIN}</b>`}
-
+            polygonCapColor={({ properties: d }) => { if (visited.indexOf(d.ADMIN) !== -1) {return 'rgba(122, 154, 107, 0.6)'} else {return 'rgba(0, 0, 0, 0)'}}}
+            polygonLabel={({ properties: d }) => `<b style="color: black; font-size: smaller;">${d.ADMIN}</b>`}
+            polygonSideColor={() => 'rgba(175, 175, 175, 0.3)'}
         />
     );
   };
